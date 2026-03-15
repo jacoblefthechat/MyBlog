@@ -1,0 +1,156 @@
+/* This sets the "Modern" vibe */
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid #000;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+}
+
+.post {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.date {
+    color: #888;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+.reveal-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease; /* This makes the change smooth */
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* This happens when your mouse hovers over it */
+.reveal-btn:hover {
+    background-color: #333;
+    transform: translateY(-3px); /* Makes it "pop" up slightly */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+/* This adds a little 'tag' look to your categories */
+.category {
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: #fff;
+    background: #000;
+    padding: 3px 10px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+/* This makes sure the posts have space between them */
+.post {
+    margin-bottom: 60px; /* Space between "files" */
+    border-left: 4px solid #000; /* Makes it look like a professional document */
+}
+
+/* This makes older posts look a bit lighter so the new one stands out */
+.older {
+    opacity: 0.8;
+}
+footer {
+    text-align: center;
+    margin-top: 100px;
+    padding-top: 40px;
+    border-top: 1px solid #ddd;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.contact-link {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid #000;
+    transition: 0.2s;
+}
+
+.contact-link:hover {
+    background: #000;
+    color: #fff;
+}
+/* Dark Mode Colors */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode .post {
+    background-color: #1e1e1e;
+    color: #fff;
+    border-left: 4px solid #ff4444; /* Red accent for the dark vibe */
+}
+
+body.dark-mode h1, body.dark-mode h2 {
+    color: #fff;
+}
+/* The toggle switch container */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    float: right;
+}
+
+/* Hide the actual checkbox */
+.switch input { opacity: 0; width: 0; height: 0; }
+
+/* The slider bar */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+/* The round circle */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 19px; width: 19px;
+    left: 3px; bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+/* When checked, change background color */
+input:checked + .slider { background-color: #333; }
+input:checked + .slider:before { transform: translateX(25px); }
