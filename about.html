@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | The Job Market Secret</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <label class="switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider"></span>
+        </label>
+        <h1><a href="index.html" style="text-decoration:none; color:inherit;">← Back Home</a></h1>
+    </header>
+
+    <main>
+        <article class="post" style="border:none; padding-top: 50px;">
+            <span class="category">THE MISSION</span>
+            <h2>Why I started this blog</h2>
+            
+            <section class="content">
+                <p>I’m not a career coach, and I’m definitely not an HR "influencer." I’m someone who looked at the modern job market and realized the math doesn't add up anymore.</p>
+
+                <p>We were told that if we put in the time—4 years, 6 years, tens of thousands of dollars in tuition—we’d be rewarded with a career in our field. Instead, we graduated into a world of <strong>ghost jobs, automated rejection emails, and "entry-level" roles that require 5 years of experience.</strong></p>
+
+                <h3>Stop playing their game.</h3>
+                <p>This blog isn't about writing a "better resume." It’s about understanding the systemic failure of the current hiring process and finding the back doors that actually work. I'm here to share the resources, the data, and the raw truth that the "experts" won't tell you.</p>
+
+                <p>If you're tired of feeling invisible in a sea of digital applications, you're in the right place.</p>
+                
+                <hr style="margin: 40px 0; border: 0; border-top: 1px solid #ddd;">
+                
+                <p><em>Have a story about a ghost job or a nightmare interview? <a href="mailto:your-email@example.com" class="contact-link">Send me a tip.</a></em></p>
+            </section>
+        </article>
+    </main>
+
+    <section class="contact-box">
+        <h3>Join the Resistance</h3>
+        <p>The job market is broken, but you don't have to navigate it alone. Whether you have a "Ghost Job" horror story or just need to vent, my inbox is open.</p>
+        <a href="mailto:your-email@example.com" class="reveal-btn">Send a Message</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 The Job Market Secret. Built for the invisible majority.</p>
+    </footer>
+
+    <script>
+        const toggle = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        if (localStorage.getItem('dark-mode') === 'enabled') {
+            body.classList.add('dark-mode');
+            toggle.checked = true;
+        }
+
+        toggle.addEventListener('change', () => {
+            if (toggle.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('dark-mode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('dark-mode', null);
+            }
+        });
+    </script>
+</body>
+</html>
