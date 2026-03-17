@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Job Market Secret | Blog</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Uncovering the truth about the broken job market, ghost jobs, and how to actually get hired in 2026.">
+    <meta name="keywords" content="job market scam, ghost jobs, hiring crisis, job search strategy, career advice">
+    <meta property="og:title" content="The Job Market Secret | Join the Resistance">
+    <meta property="og:description" content="Stop applying to ghost jobs. Learn the back-door strategy to getting hired.">
+    <meta property="og:image" content="bg.jpg">
 </head>
 <body>
 
@@ -14,52 +19,73 @@
             <span class="slider"></span>
         </label>
     
-        <h1>Why you can't find a <span style="background-color: red; color: white;"><i>Job</i></span> in today's market</h1>
+        <h1>Why you can't find a <span style="background-color: red; color: white; padding: 0 5px;"><i>Job</i></span></h1>
         <p>You can't find a Job and I get it!</p>
+        <nav style="margin-top: 15px;">
+            <a href="about.html" class="about-link">Read the Mission (About Me)</a>
+        </nav>
     </header>
 
     <main>
-    <article class="post">
-        <span class="category">THE STRATEGY</span>
-        <h2>How to find the 'Hidden' Job Market</h2>
-        <p class="date">Posted: March 14, 2026</p>
-        <section class="content">
-            <p>Most people apply for jobs on the front door. I’m going to show you the back door...</p>
-            <a href="post1.html" class="reveal-btn">Read the Full Secret</a>
-        </section>
-    </article>
+        <article class="post">
+            <span class="category">THE STRATEGY</span>
+            <h2>How to find the 'Hidden' Job Market</h2>
+            <p class="date">Posted: March 14, 2026</p>
+            <section class="content">
+                <p>Most people apply for jobs on the front door. I’m going to show you the back door...</p>
+                <a href="post1.html" class="reveal-btn">Read the Full Secret</a>
+            </section>
+        </article>
 
-    <article class="post">
-        <span class="category">OPINION</span>
-        <h2>Why the Job Market feels like a Scam</h2>
-        <p class="date">Posted: March 10, 2026</p>
-        <section class="content">
-            <p>The traditional way of applying is dead. If you're just clicking 'Apply', you're invisible.</p>
-            <a href="post2.html" class="reveal-btn">Read More</a>
-        </section>
-    </article>
+        <article class="post">
+            <span class="category">OPINION</span>
+            <h2>Why the Job Market feels like a Scam</h2>
+            <p class="date">Posted: March 10, 2026</p>
+            <section class="content">
+                <p>The traditional way of applying is dead. If you're just clicking 'Apply', you're invisible.</p>
+                <a href="post2.html" class="reveal-btn">Read More</a>
+            </section>
+        </article>
 
-    <article class="post">
-        <span class="category">MINDSET</span>
-        <h2>Staying sane while the market burns</h2>
-        <p class="date">Posted: March 05, 2026</p>
-        <section class="content">
-            <p>Job hunting takes a toll. Here is how to keep your confidence up when you keep hearing 'no'.</p>
-            <a href="post3.html" class="reveal-btn">Read More</a>
-        </section>
-    </article>
-</main>
+        <article class="post">
+            <span class="category">MINDSET</span>
+            <h2>Staying sane while the market burns</h2>
+            <p class="date">Posted: March 05, 2026</p>
+            <section class="content">
+                <p>Job hunting takes a toll. Here is how to keep your confidence up when you keep hearing 'no'.</p>
+                <a href="post3.html" class="reveal-btn">Read More</a>
+            </section>
+        </article>
+    </main>
 
-<footer>
-    <p>Tired of the ghost jobs? Let's talk.</p>
-    <a href="mailto:your-email@example.com" class="contact-link">Send me a tip</a>
-</footer>
+    <section class="contact-box">
+        <h3>Join the Resistance</h3>
+        <p>The job market is broken, but you don't have to navigate it alone. Whether you have a "Ghost Job" horror story or just need to vent, my inbox is open.</p>
+        <a href="mailto:your-email@example.com" class="reveal-btn">Send a Message</a>
+    </section>
 
-<script>
-    const toggle = document.getElementById('theme-toggle');
-    toggle.addEventListener('change', () => {
-        document.body.classList.toggle('dark-mode');
-    });
-</script>
+    <footer>
+        <p>&copy; 2026 The Job Market Secret. Built for the invisible majority.</p>
+    </footer>
+
+    <script>
+        const toggle = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        if (localStorage.getItem('dark-mode') === 'enabled') {
+            body.classList.add('dark-mode');
+            toggle.checked = true;
+        }
+
+        toggle.addEventListener('change', () => {
+            if (toggle.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('dark-mode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('dark-mode', null);
+            }
+        });
+    </script>
 </body>
 </html>
