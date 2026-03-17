@@ -3,21 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <title>Post Title</title>
+    <title>Why the Job Market feels like a Scam</title>
 </head>
 <body>
     <header>
         <h1><a href="index.html" style="text-decoration:none; color:inherit;">← Back Home</a></h1>
+        <label class="switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider"></span>
     </header>
 
     <main>
         <article class="post" style="border:none; padding-top: 50px;">
-            <h2>YOUR POST TITLE HERE</h2>
+            <h2>Why the Job Market feels like a Scam</h2>
             <section class="content">
-                <p>This is where your long-form article goes. You can write as much as you want here!</p>
-                <p>Add another paragraph about your secret strategy...</p>
+                <p>We were promised a golden ticket. Study hard, get the four-year degree, maybe stack a master’s on top of it, and the world is your oyster. But for millions of us, that promise has evaporated, leaving behind a generation that is overqualified, underpaid, and frankly, exhausted.</p>
+
+                <p>If you feel like the system is rigged, it’s because it is. We aren’t just fighting for jobs; we’re fighting against an automated, inhuman bureaucracy that treats human ambition like a data problem to be optimized.</p>
+
+                <h3>The "Entry-Level" Paradox</h3>
+                <p>The most insulting part? The "Entry-Level" label. LinkedIn data shows that over 40% of positions labeled "entry-level" now demand 3+ years of experience. You need a job to get experience, but you need experience to get a job. It’s a closed loop designed to keep new graduates on the outside looking in.</p>
+
+                <h3>The Ghost in the Machine</h3>
+                <p>The human connection in hiring is dead. When you hit "Apply," your resume goes into an Applicant Tracking System (ATS) that hunts for keywords. If your formatting is slightly off or you miss one niche industry term, you’re rejected before a human even knows you exist. Worse yet, many of the jobs you’re applying to are "ghost jobs"—listings posted by companies that have no intention of hiring, just to project growth or build a talent pool. It’s not just demoralizing; it’s a waste of our time.</p>
+
+                <h3>Resource References</h3>
+                <p>If you want to pull back the curtain on why this is happening, these resources are essential reading/watching:</p>
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=LNJPnQFRZmQ" target="_blank">The Reality of the Tech Job Market (2026)</a> - Why generalist roles are vanishing.</li>
+                    <li><a href="https://www.youtube.com/watch?v=CmaGMNYWTcY" target="_blank">The Human Cost of Automated Hiring</a> - How the "human" element has been stripped from the process.</li>
+                    <li><a href="https://www.youtube.com/watch?v=1b8ZRrLMrl4" target="_blank">The Housing & Debt Trap</a> - Why the math doesn't work for today's graduates.</li>
+                    <li><a href="https://www.youtube.com/watch?v=rXvZ27pMZ1w" target="_blank">The H-1B & Outsourcing Conflict</a> - Understanding the global labor competition.</li>
+                    <li><a href="https://www.youtube.com/watch?v=P4I_LuUqBqg" target="_blank">The Myth of the Degree Guarantee</a> - Why enrollment is falling.</li>
             </section>
         </article>
     </main>
+
+    <script>
+    const toggle = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    // Check if user previously chose Dark Mode
+    if (localStorage.getItem('dark-mode') === 'enabled') {
+        body.classList.add('dark-mode');
+        toggle.checked = true;
+    }
+
+    toggle.addEventListener('change', () => {
+        if (toggle.checked) {
+            body.classList.add('dark-mode');
+            localStorage.setItem('dark-mode', 'enabled');
+        } else {
+            body.classList.remove('dark-mode');
+            localStorage.setItem('dark-mode', null);
+        }
+    });
+</script>
+
 </body>
 </html>
